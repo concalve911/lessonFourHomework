@@ -75,10 +75,6 @@ body {
   padding-top: 39px;
 }
 
-.logo__img {
-  /* margin-left: 51px; */
-}
-
 .menu__list {
   display: flex;
   justify-content: space-between;
@@ -468,9 +464,6 @@ body {
   font-weight: 600;
 }
 
-.footer {
-}
-
 .footer__menu-list {
   padding-top: 97px;
   white-space: nowrap;
@@ -482,11 +475,14 @@ body {
   margin-bottom: 21px;
 }
 
+.footer__menu-item {
+  line-height: 1;
+}
+
 .footer__menu-link {
   font-size: 15px;
   display: inline-block;
   margin-bottom: 15px;
-  /* line-height: 1; */
 }
 
 .product__footer {
