@@ -1,3 +1,5 @@
+@import "./fonts.css";
+
 html {
   box-sizing: border-box;
 }
@@ -11,8 +13,14 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+button {
   font-weight: 600;
+}
+
+h1 {
+  font-size: 65px;
+  line-height: 70px;
 }
 
 h2 {
@@ -35,7 +43,7 @@ a {
 
 button {
   cursor: pointer;
-  font-weight: 600;
+  font-size: 16px;
   line-height: 2.8;
 }
 
@@ -46,8 +54,8 @@ button {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: "Graphik", sans-serif;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
   color: #000;
@@ -55,7 +63,7 @@ body {
 }
 
 .header {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   border-bottom: 1px solid #dddddd;
 }
@@ -65,33 +73,40 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 39px;
-  padding-bottom: 34px;
 }
 
-.logo__img {
+/* .logo__img {
   margin-right: 51px;
-}
+} */
 
 .menu__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 57px;
-  margin-right: 348px;
+  margin-left: auto;
+}
+
+.header__btn-group {
+  margin-left: 300px;
+  padding-bottom: 25px;
 }
 
 .header__btn--one {
-  padding: 1px 38px;
   margin-right: 10px;
   background-color: transparent;
   border: 1px solid #dddddd;
 }
 
 .header__btn--two {
-  padding: 2px 26px 2px 26px;
   background-color: #ff6336;
   color: #ffffff;
   border: none;
+}
+
+.header__btn--two,
+.header__btn--one {
+  min-width: 120px;
 }
 
 .top__inner {
@@ -112,17 +127,17 @@ body {
   font-size: 25px;
   max-width: 471px;
   margin-bottom: 51px;
+  line-height: 1.4;
 }
 
-.top__btn--one,
-.top__btn--two {
-  margin-bottom: 50px;
+.top__btn-group {
+  margin-bottom: 25px;
   font-size: 16px;
   line-height: 3.75;
 }
 
 .top__btn--one {
-  padding: 2px 41px 2px 42px;
+  padding: 6px 41px 6px 42px;
   background-color: #ff6336;
   color: #ffffff;
   border: none;
@@ -130,18 +145,18 @@ body {
 }
 
 .top__btn--two {
-  padding: 1px 30px;
+  padding: 6px 30px;
   background-color: transparent;
   border: 1px solid #dddddd;
 }
 
 .top__text-credits {
   font-size: 15px;
-  padding-bottom: 182px;
+  margin-bottom: 172px;
 }
 
 .top__img {
-  padding-bottom: 182px;
+  margin-bottom: 182px;
 }
 
 .banner {
@@ -182,6 +197,7 @@ body {
 
 .app__title {
   margin-bottom: 30px;
+  line-height: 1, 2;
 }
 
 .app__text {
@@ -193,10 +209,6 @@ body {
 .app__link {
   font-weight: 600;
   margin-bottom: 151px;
-}
-
-.footer {
-  line-height: 1;
 }
 
 .app__icon {
@@ -232,12 +244,13 @@ body {
 
 .app__icon-text {
   max-width: 303px;
-  font-size: 18px;
+  font-family: "Roboto" sans-serif;
   margin-top: 20px;
   margin-bottom: 54px;
 }
 
 .app-boost__title {
+  font-size: 50px;
   text-align: center;
   padding-top: 154px;
 }
@@ -319,17 +332,10 @@ body {
   align-items: center;
 }
 
-.rating__box--one span {
-  border-left: 1px solid #000;
-  height: 168px;
-  position: absolute;
-  right: 726px;
-}
-
 .cake__logo {
   padding-top: 89px;
   padding-bottom: 84px;
-  padding-right: 67px;
+  margin-right: 67px;
 }
 
 .rating__title {
@@ -338,6 +344,7 @@ body {
 
 .rating__box-list {
   display: flex;
+  border-left: 1px solid #000;
 }
 
 .rating__box-item {
@@ -346,9 +353,11 @@ body {
   justify-content: flex-end;
   align-items: flex-start;
   padding-left: 71px;
+  padding-top: 30px;
 }
 
 .rating__logo {
+  margin-right: 35px;
   margin-bottom: 20px;
 }
 
@@ -385,7 +394,7 @@ body {
 .information__btn {
   background: #ff6336;
   color: #ffffff;
-  padding: 12px 35px;
+  padding: 8px 21px;
   border: none;
 }
 
@@ -413,7 +422,7 @@ body {
   background-color: #000;
   color: #fff;
   border: none;
-  padding: 10px 50px;
+  padding: 8px 44px;
 }
 
 .footer {
@@ -458,6 +467,9 @@ body {
   font-weight: 600;
 }
 
+.footer {
+}
+
 .footer__menu-list {
   padding-top: 97px;
   white-space: nowrap;
@@ -473,18 +485,19 @@ body {
   font-size: 15px;
   display: inline-block;
   margin-bottom: 15px;
+  /* line-height: 1; */
 }
 
-.product {
+.product__footer {
   margin-right: 130px;
 }
 
-.company {
-  margin-left: 90px;
+.company__footer {
+  margin-left: 60px;
 }
 
-.legal {
-  margin-left: 40px;
+.legal__footer {
+  margin-left: 62px;
 }
 
 .footer__credits-inner {
