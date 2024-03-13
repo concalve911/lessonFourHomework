@@ -75,16 +75,16 @@ body {
   padding-top: 39px;
 }
 
-/* .logo__img {
-  margin-right: 51px;
-} */
+.logo__img {
+  /* margin-left: 51px; */
+}
 
 .menu__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 57px;
-  margin-left: auto;
+  margin-left: 41px;
 }
 
 .header__btn-group {
@@ -102,6 +102,7 @@ body {
   background-color: #ff6336;
   color: #ffffff;
   border: none;
+  margin-right: 10px;
 }
 
 .header__btn--two,
