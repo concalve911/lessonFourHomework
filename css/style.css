@@ -73,6 +73,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 39px;
+  height: 100px;
 }
 
 .menu__list {
