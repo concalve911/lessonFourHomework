@@ -53,6 +53,10 @@ button {
   padding: 0 20px;
 }
 
+.header__container {
+  max-width: 1370px;
+}
+
 body {
   font-family: "Graphik", sans-serif;
   font-size: 20px;
@@ -73,7 +77,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 39px;
-  height: 100px;
+  padding-bottom: 25px;
+  height: 95px;
 }
 
 .menu__list {
@@ -86,7 +91,6 @@ body {
 
 .header__btn-group {
   margin-left: 300px;
-  padding-bottom: 25px;
 }
 
 .header__btn--one {
