@@ -110,7 +110,7 @@ body {
 .header__btn--one,
 .header__btn--two {
   min-width: 120px;
-  min-height: 45px;
+  height: 45px;
 }
 
 .top__inner {
