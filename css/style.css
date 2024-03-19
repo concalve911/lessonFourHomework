@@ -242,7 +242,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
   margin-top: 58px;
   padding-bottom: 172px;
 }
@@ -252,11 +252,12 @@ body {
 }
 
 .app__icon-img--item {
-  margin-top: 30px;
+  margin-top: 45px;
 }
 
 .app__icon-subtitle {
   font-size: 25px;
+  margin-bottom: 20px;
 }
 
 .app__icon-item {
@@ -265,11 +266,9 @@ body {
 }
 
 .app__icon-text {
-  max-width: 409px;
+  max-width: 310px;
   font-size: 18px;
-  font-family: "Roboto" sans-serif;
-  margin-top: 26px;
-  margin-bottom: 25px;
+  margin: 0 auto;
 }
 
 .app-boost__title {
@@ -307,6 +306,14 @@ body {
   flex-basis: 409px;
   margin-top: 34px;
   margin-bottom: 25px;
+}
+
+.app__icon-text span {
+  text-decoration: underline;
+}
+
+.app-boost__text span {
+  text-decoration: underline;
 }
 
 .app-boost__link {
