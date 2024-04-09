@@ -781,10 +781,6 @@ body {
     align-items: flex-start;
     gap: 50px;
   }
-
-  .legal__footer {
-    padding-top: 0;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -795,6 +791,12 @@ body {
     position: absolute;
     bottom: 87px;
     right: 412px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .legal__footer {
+    padding-top: 0;
   }
 }
 
